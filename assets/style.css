@@ -1,5 +1,14 @@
-.body, h1, h2, h4 {
+.body, h1, h2, h4, .no-pointer {
   cursor: default;
+}
+
+.footer {
+  position absolute;
+  font-size: 1rem;
+  color: grey;
+  text-align: right;
+  font-style: italic;
+  padding-right: 1rem;
 }
 
 .main-image {
@@ -13,7 +22,7 @@
   background-image: url("./main-ledger.jpg");
   background-repeat: no-repeat;
   background-position: right;
-  transition: clip-path linear 0.25s;
+  transition: clip-path ease-out 0.15s;
   clip-path: inset(0 0 0 260px);
 }
 
@@ -59,4 +68,5 @@
 
 .overlay-height-letter:before {
   content: '11"';
+}
 
